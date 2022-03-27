@@ -1,0 +1,18 @@
+{% extends "MainTemplate.html" %}
+
+{% block content %}
+<div class="col-12" id="buttonDiv">
+    <div class="row">
+        <div class="col-2"></div>
+        <button type="button" class="btn btn-success col-4" style="margin-right: 10px;" id="Start" onclick="start(1)">NEW SENTENCE</button>
+        <button type="button" class="btn btn-primary col-4" id="Jumble" style="margin-left: 10px;" onclick="start()">MIX</button>
+    </div>
+
+    <div class="border border-dark col-12 justify-content-center" id="outputBox" style="min-height: 65px;"></div>
+    <div class="border border-dark col-12 justify-content-center" id="reassembledBox" style="min-height: 65px;"></div>
+    <br>
+    <button type="button" class="btn btn-warning col-4" id="Reset" onclick="reset()">RESET</button>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "MainTemplate.html" %}
+
+{% block content %}
+
+<div class="col-12 border border-dark" id="input" style="margin-top: 5%; min-height: 65px;">
+    <input id="userInput" placeholder="Enter Sentence to be Jumbled." style="border: none;">
+</div>
+<div class="border border-dark col-12 justify-content-center d-none" id="outputBox" style="min-height: 65px;"></div>
+
+<div class="border border-dark col-12 justify-content-center" id="reassembledBox" style="min-height: 65px;"></div>
+
+<div class="col-12" id="buttonDiv">
+    <button type="button" class="btn btn-primary col-5" id="Jumble" onclick="start(0)">JUMBLE</button>
+    <button type="button" class="btn btn-warning col-5" id="Reset" onclick="reset()">RESET</button>
+</div>
+
+{% endblock %}
